@@ -1,0 +1,15 @@
+
+target/
+.mvn/
+.git/
+.gitignore
+README.md
+*.md
+.DS_Store
+.vscode/
+.idea/
+*.iml
+.breakpoints
+.settings/
+.project
+.classpath
