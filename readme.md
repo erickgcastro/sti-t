@@ -13,7 +13,7 @@ Para executar o projeto localmente em sua máquina, siga as etapas abaixo:
 1. Clone o repositório do projeto:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/erickgcastro/sti-t.git
    ```
 
 2. Navegue até o diretório raiz do projeto;
