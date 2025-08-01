@@ -4,9 +4,9 @@ Para executar o projeto localmente em sua máquina, siga as etapas abaixo:
 
 ### Pré-requisitos
 
-- Docker
-- Docker Compose
-- Certifique-se de ter as portas 3000, 5000 e 5432 livre em sua máquina antes de prosseguir
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
+- Portas **3000**, **5000** e **5432** livres na sua máquina
 
 ### Passos
 
@@ -16,21 +16,19 @@ Para executar o projeto localmente em sua máquina, siga as etapas abaixo:
    git clone https://github.com/erickgcastro/sti-t.git
    ```
 
-2. Navegue até o diretório raiz do projeto;
-
-3. Inicie o projeto usando o Docker Compose:
-
+2. Acesse a raiz do projeto:
+   ```bash
+   cd sti-t
+   ```
+3. Inicie os containers com Docker Compose:
    ```bash
    docker compose up --build
    ```
-
-   Isso iniciará os contêineres necessários para executar o projeto;
-
-4. Após a inicialização, você poderá acessar o projeto em seu navegador através do seguinte endereço:
-
+4. Acesse a aplicação no navegador:
    ```bash
    http://localhost:3000
    ```
+---
 
 ## Endpoints da API
 
@@ -38,12 +36,14 @@ Para executar o projeto localmente em sua máquina, siga as etapas abaixo:
  http://localhost:5000/api
 ```
 
-- `GET /` - Página inicial
-- `GET /usuarios` - Listar usuários
-- `POST /usuarios` - Criar usuário
-- `GET /usuarios/{id}` - Buscar usuário por ID
-- `PUT /usuarios/{id}` - Atualizar usuário
-- `DELETE /usuarios/{id}` - Deletar usuário
+| Método | Endpoint               | Descrição                     |
+|--------|------------------------|-------------------------------|
+| GET    | `/`                    | Página inicial                |
+| GET    | `/usuarios`            | Lista todos os usuários       |
+| POST   | `/usuarios`            | Cria um novo usuário          |
+| GET    | `/usuarios/{id}`       | Busca usuário por ID          |
+| PUT    | `/usuarios/{id}`       | Atualiza um usuário           |
+| DELETE | `/usuarios/{id}`       | Deleta um usuário             |
 
 ### Exemplo de requisição POST
 
